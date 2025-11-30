@@ -40,7 +40,7 @@ export default function RootLayout({
                   + New Event
                 </a>
               </div>
-            </div>
+            </div>  
           </div>
         </nav>
         <main className="min-h-screen bg-gray-50">
