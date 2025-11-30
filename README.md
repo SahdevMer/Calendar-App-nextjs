@@ -90,7 +90,7 @@ The application uses Prisma with SQLite. The Event model includes:
 - `startDate` - Event start date and time
 - `endDate` - Event end date and time
 - `isRecurring` - Boolean flag for recurring events
-- `frequency` - Recurrence frequency: "daily", "weekly", or "monthly"
+- `frequency` - Recurrence frequency: "daily", "weekly", or "monthly."
 - `daysOfWeek` - JSON string array for weekly events (e.g., "[1,3,5]" for Mon, Wed, Fri)
 - `createdAt` - Timestamp
 - `updatedAt` - Timestamp
@@ -99,7 +99,7 @@ The application uses Prisma with SQLite. The Event model includes:
 
 ### Creating an Event
 
-1. Click "New Event" in the navigation or go to `/events/new`
+1. Click "New Event" in the navigation or go to `/events/new.`
 2. Fill in the event details:
    - Title (required)
    - Description (optional)
@@ -109,7 +109,7 @@ The application uses Prisma with SQLite. The Event model includes:
    - Check "Recurring Event"
    - Select frequency (Daily, Weekly, Monthly)
    - For weekly events, select the weekdays
-4. Click "Create Event"
+4. Click "Create Event."
 
 ### Viewing Events
 
@@ -120,14 +120,14 @@ The application uses Prisma with SQLite. The Event model includes:
 ### Editing an Event
 
 1. Navigate to the event details page
-2. Click "Edit" button
+2. Click the "Edit" button
 3. Modify the event details
-4. Click "Save Changes"
+4. Click "Save Changes."
 
 ### Deleting an Event
 
 1. Navigate to the event details page or events list
-2. Click "Delete" button
+2. Click the "Delete" button
 3. Confirm the deletion
 
 ## Project Structure
@@ -177,7 +177,7 @@ calendar-app/
 ## Recurring Events Logic
 
 ### Daily Events
-Events repeat every day between the start and end date.
+Events repeat every day between the start and end dates.
 
 ### Weekly Events
 Events repeat on selected weekdays (e.g., Monday, Wednesday, Friday) between the start and end date.
@@ -185,10 +185,13 @@ Events repeat on selected weekdays (e.g., Monday, Wednesday, Friday) between the
 ### Monthly Events
 Events repeat on the same day of the month (e.g., 15th of every month) between the start and end date.
 
-## Screenshots
+# Calendar App Next.js
 
-*Note: Add screenshots of your calendar and event forms here*
+## Screenshot
+![Uploading image.png…]()
 
+<img width="1332" height="650" alt="image" src="https://github.com/user-attachments/assets/12a38221-13f5-45ea-baf3-e2163422cd31" />
+ 
 ## Future Enhancements (Bonus Features)
 
 - [ ] Use FullCalendar.js for enhanced calendar UI
@@ -196,7 +199,7 @@ Events repeat on the same day of the month (e.g., 15th of every month) between t
 - [ ] Authentication with NextAuth.js
 - [ ] Filters/search by date or keyword
 - [ ] Server Actions for form handling
-- [ ] Export events as ICS calendar file
+- [ ] Export events as an ICS calendar file
 
 ## License
 
