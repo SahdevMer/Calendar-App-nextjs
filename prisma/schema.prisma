@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Event {
+  id              Int      @id @default(autoincrement())
+  title           String
+  description     String?
+  startDate       DateTime
+  endDate         DateTime
+  isRecurring     Boolean  @default(false)
+  frequency       String?  // "daily", "weekly", "monthly"
+  daysOfWeek      String?  // JSON string array for weekly events, e.g., "[1,3,5]" for Mon, Wed, Fri
+  recurringEndDate DateTime? // Optional end date for recurring events
+  category        String?  // Event category: "work", "personal", "meeting", "birthday", "holiday", "other"
+  color           String?  // Color code for the category
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
